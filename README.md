@@ -19,6 +19,10 @@ y finalmente Run BBAppStarter para asi en nuestro browser ingresar la siguiente 
 ```
 localhost:8080
 ```
+
+## Diagrama de clase
+![image](https://github.com/Luciernagas/arsw_seguridad/assets/104604359/27dfc537-7f4f-497a-bbb6-fdbe9864fd2b)
+
 ## Contribuidores
 ♡ Luisa Valentina De la hoz Rocha ♡
 
