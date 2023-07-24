@@ -1,8 +1,7 @@
-package edu.escuelaing.arsw;
+package edu.escuelaing.arsw.Ticket;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Ticket {
     private static Ticket instance = new Ticket();

@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.configurator;
+package edu.escuelaing.arsw.springsecurity;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,15 +16,8 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/", "/home").permitAll()
-                        .anyRequest().authenticated())
-                .formLogin((form) -> form
-                        .loginPage("/login")
-                        .permitAll())
-                .logout((logout) -> logout
-                        .permitAll());
+        http.authorizeHttpRequests((requests) -> requests.requestMatchers("/", "/home").permitAll().anyRequest().authenticated()).formLogin((form) -> form.loginPage("/login").permitAll()).logout((logout) -> logout.permitAll());
+
         return http.build();
     }
 
@@ -42,6 +35,7 @@ public class WebSecurityConfig {
                         .password("password")
                         .roles("USER")
                         .build();
-        return new InMemoryUserDetailsManager(user);
+
+        return new InMemoryUserDetailsManager(user,user2);
     }
 }
