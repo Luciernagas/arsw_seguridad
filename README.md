@@ -19,3 +19,6 @@ y finalmente Run BBAppStarter para asi en nuestro browser ingresar la siguiente 
 ```
 localhost:8080
 ```
+## Contribuidores
+♡ Luisa Valentina De la hoz Rocha ♡
+
